@@ -35,6 +35,16 @@
       h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
     })(document);
       </script>
+      <script>
+          $(window).scroll(function() {
+
+if ($(document).scrollTop() > $("#self__intro").offset().top - 50) {
+    $(".navigation__button span").css({backgroundColor: "#fbf4ef"});
+  } else {
+    $(".navigation__button span").css({backgroundColor: "#374ac8"});
+}    
+});  
+      </script>
 </head>
 <body>
 
@@ -171,12 +181,46 @@
                 </div>
             </div>
         </div>
-        <div class="about__sora2">
-            
+        <div class="about__sora2" id="self__intro">
+            <div class="selfintroduction">
+            <p>안녕하세요!
+            김소라입니다. 현재 부산IT교육센터에서 프론트엔드 디자인(웹디자인&웹퍼블리싱) 과정의 교육 프로그램을 듣고있습니다. </p>
+
+            <p>주말이나 수업이 없는 시간에는 html/css/jquery 관련 강의를 찾아 들으며 부족한 부분을 공부하였고, 현재는 javascript 공부를 시작하였습니다. </p>
+            </div>
+        </div>
+        <div class="selfintroduction">
+            <p>새로운 일을 두려워하지 않고 도전 할 준비가 되어있습니다! </p>
         </div>
     </section>
 
+    <section id="goto">
+        <div class="goto-left">
+            <button class="border-btn btn-green">
+                <a class="text-green" href="https://sora-77.github.io/proj2/" target="_blank">작업물 보기</a>
+            </button>
+        </div>
+        <div class="gotoright">
 
+        </div>
+    </section>
+
+   <!-- <footer id="footer">
+        <div class="footer__logo logo">
+            <a href="index.html">
+                <span class="logo--first">doremifa</span>
+                SORA
+                <span class="logo--second">sido</span>
+            </a>
+        </div>
+        <ul class="menu__list">
+            <li class="menu__item"><a href="about.html">About</a></li>
+            <li class="menu__item"><a href="website.html">Web Site</a></li>
+            <li class="menu__item"><a href="ad.html">Advertisement</a></li>
+            <li class="menu__item"><a href="graphic.html">Graphics</a></li>
+            <li class="menu__item"><a href="#">Contact</a></li>
+        </ul>
+    </footer>-->
     
 </body>
 </html> 

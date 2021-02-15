@@ -74,6 +74,10 @@ button {
   transform: rotate(180deg);
 }
 
+#navigation .navigation__checkbox:checked ~ .navigation__button span {
+  background-color: var(--color-primary) !important;
+}
+
 #navigation
   .navigation__checkbox:checked
   ~ .navigation__button
@@ -144,7 +148,7 @@ button {
 
 #navigation .navigation__nav .navigation__list {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   list-style: none;
@@ -306,6 +310,7 @@ button {
 
 .header__logo {
   z-index: 3000;
+  position: fixed;
 }
 
 .logo a {

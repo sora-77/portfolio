@@ -63,6 +63,7 @@
   font-size: 5rem;
   font-weight: 400;
   line-height: 2rem;
+  width: 2rem;
   color: currentColor;
   transition: all 0.4s;
   transform: translateX(-16rem) translateY(-6px);
@@ -283,6 +284,7 @@
 .works__text {
   position: absolute;
   left: 50%;
+  top: 33%;
   transform: translateX(-50%);
   z-index: 10;
 }
@@ -310,15 +312,14 @@
 
 /********* SUB *********/
 
-#website,
-#advertisement {
+#website {
   height: 460rem;
 }
 
 #website .works__content::after,
 #advertisement .works__content::after,
 #graphic .works__content::after {
-  transform: translateY(-20.5rem);
+  transform: translateY(-22.5rem);
 }
 
 #website .works__content .works__text,
@@ -600,9 +601,19 @@
 }
 
 #more {
+  margin-top: 10rem;
   text-align: center;
   position: relative;
-  height: 140rem;
+  height: 160rem;
+}
+
+#more.ad_more {
+  margin-top: 35rem;
+}
+
+#more.graphic_more {
+  margin-top: 28rem;
+  height: 130rem;
 }
 
 #more .section__title {
@@ -688,6 +699,10 @@
 
 /**************** ADVERTISEMENT ******************/
 
+#advertisement {
+  height: 380rem;
+}
+
 #website .works__content,
 #advertisement .works__content,
 #graphic .works__content {
@@ -695,15 +710,17 @@
 }
 
 #advertisement .works__content::before {
-  background-color: var(--color-primary);
+  background-color: #fff;
 }
 
 #advertisement .works__content::after {
-  background-color: var(--color-primary);
+  background-color: #fff;
   height: 400rem;
 }
 
-#advertisement .works__text--name,
+#advertisement .works__text--name {
+  color: var(--color-primary);
+}
 #graphic .works__text--name {
   color: #fff;
 }
@@ -737,7 +754,7 @@
 }
 
 #advertisement .article__detail {
-  color: #fff;
+  color: #000;
   font-size: 2.2rem;
   font-weight: 300;
   font-family: var(--secondary-ko-font);
@@ -762,7 +779,7 @@
 
 #advertisement .banner2 {
   background-color: var(--color-secondary);
-  padding: 8rem 0;
+  padding: 21rem 0;
   top: 195rem;
 }
 
@@ -824,6 +841,32 @@
   margin-top: 17rem;
   color: #000;
 }
+
+#advertisement .banner3 {
+  top: 285rem;
+  padding: 24rem 0 21rem;
+  background-color: #eee;
+}
+
+#advertisement .banner3 .article__img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+#advertisement .banner3 .img-box {
+  width: 45%;
+  box-shadow: 3px 10px 25px rgb(199, 199, 199);
+}
+
+#advertisement .banner3 .article__text {
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  width: 38rem;
+  text-align: left;
+}
+
 /**************GRAPHIC***************/
 
 #graphic .works__content::before {
@@ -832,7 +875,7 @@
 
 #graphic .works__content::after {
   background-color: var(--color-green);
-  height: 400rem;
+  height: 460rem;
 }
 
 #graphic.main__section .content {
@@ -849,30 +892,30 @@
   position: relative;
 }
 
-#graphic .content .box1 {
+#graphic .content1 .box1 {
   width: 40%;
   transform: translateX(20%);
 }
-#graphic .content .box2 {
+#graphic .content1 .box2 {
   width: 64%;
   transform: translateY(-18%) translateX(24%);
 }
-#graphic .content .box3 {
+#graphic .content1 .box3 {
   width: 38%;
   transform: translateY(-260%) translateX(-70%);
 }
 
-#graphic .content .img-box1 {
+#graphic .content1 .img-box1 {
   width: 100%;
 }
-#graphic .content .img-box2 {
+#graphic .content1 .img-box2 {
   width: 100%;
 }
-#graphic .content .img-box3 {
+#graphic .content1 .img-box3 {
   width: 100%;
 }
 
-#graphic .content .img-box img {
+#graphic .content1 .img-box img {
   width: 100%;
   object-fit: cover;
 }
@@ -922,6 +965,31 @@
   left: 2rem;
 }
 
+#graphic .originals {
+}
+
+#graphic .originals img {
+  display: block;
+  width: 30rem;
+  height: 26rem;
+  object-fit: cover;
+  position: absolute;
+}
+
+#graphic .originals .tabasco__original {
+  top: 0;
+  left: 38%;
+}
+
+#graphic .originals .addidas__original {
+  top: 25%;
+  left: 4.4%;
+}
+#graphic .originals .snikers__original {
+  top: 52.6%;
+  right: 3.8%;
+}
+
 #graphic .content2 {
   width: 100%;
   height: 94rem;
@@ -951,6 +1019,46 @@
   font-family: var(--main-en-font);
   font-weight: 300;
   transform: translateY(4rem);
+}
+
+#graphic.main__section .content3 {
+  top: 68%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#graphic .content3 .article__content-box {
+  flex: 0 0 50%;
+  margin-bottom: 21rem;
+}
+
+#graphic .content3 .article__content-box.box2 {
+}
+
+#graphic .content3 .article__content-box.box3,
+#graphic .content3 .article__content-box.box4 {
+  background-color: #eee;
+  padding: 8rem 0;
+}
+
+#graphic .content3 .article__content-box .img-box {
+  height: 63.144rem;
+}
+#graphic .content3 .article__content-box.box3 .img-box,
+#graphic .content3 .article__content-box.box4 .img-box {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#graphic .content3 .article__content-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#graphic .content3 .article__content-box.box3 img,
+#graphic .content3 .article__content-box.box4 img {
+  object-fit: contain;
 }
 
 .logo__application {

@@ -42,15 +42,11 @@ $(function(){
       $(window).scroll(function() {
 
         if ($(document).scrollTop() > $("#about .about__sora2").offset().top - 280) {
-            $(".about__intro").addClass("on");
-          } if ($(document).scrollTop() > $("#about .about__sora2").offset().top - 500) {
-            $(".about__intro--sub").hide();
+            $(".about__intro").hide();
           } else {
-            $(".about__intro").removeClass("on");
-            $(".about__intro--sub").show();
-
+            $(".about__intro").show();
         }    
-        });  
+        }); 
 
 
         $(window).scroll(function() {
@@ -71,4 +67,6 @@ $(function(){
           });
 
       
+          
+    
 })
