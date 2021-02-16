@@ -45,8 +45,17 @@ $(function(){
             $(".about__intro").hide();
           } else {
             $(".about__intro").show();
-        }    
+        } 
         }); 
+
+        $(window).scroll(function() {
+
+          if ($(document).scrollTop() > 600) {
+              $(".header__logo").fadeOut();
+            } else {
+              $(".header__logo").fadeIn();
+          } 
+          }); 
 
 
         $(window).scroll(function() {
@@ -65,6 +74,7 @@ $(function(){
           top: - (scroll/5)  + "%",
           });
           });
+
 
       
           

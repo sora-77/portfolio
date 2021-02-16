@@ -48,6 +48,10 @@ button {
   cursor: pointer;
 }
 
+.break {
+  word-break: break-all;
+}
+
 #navigation .navigation__checkbox {
   display: none;
 }
@@ -376,11 +380,10 @@ button {
   position: absolute;
   bottom: 4rem;
   display: flex;
-  justify-content: space-between;
-  width: 35%;
 }
 
 #footer .menu__list .menu__item {
+  margin-right: 1.8rem;
 }
 
 #footer .menu__list .menu__item a {
