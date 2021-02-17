@@ -12,7 +12,6 @@
 #main {
   padding: 8rem 0;
   display: flex;
-  align-items: center;
 }
 
 #main .main__quote {
@@ -24,7 +23,7 @@
   color: var(--color-primary);
   flex: 1;
   z-index: 1;
-  transform: translateX(9rem);
+  transform: translateX(9rem) translateY(13rem);
   text-align: right;
   display: flex;
   flex-direction: column;
@@ -80,6 +79,20 @@
   color: #fff;
 }
 
+#main .border-btn.onlytext {
+  width: 50%;
+  text-align: center;
+}
+
+.border-btn.onlytext:hover {
+  background-color: transparent;
+}
+
+.border-btn.onlytext:hover a,
+.border-btn.onlytext:hover a::after {
+  color: var(--color-primary);
+}
+
 .border-btn:hover a {
   color: #fff;
 }
@@ -110,6 +123,7 @@
   font-size: 2.4rem;
   font-family: var(--secondary-ko-font);
   font-weight: 700;
+  transform: translateY(-3px);
 }
 
 #main .main__image {
@@ -418,7 +432,8 @@
 }
 
 #website article .border-btn {
-  width: 100%;
+  width: 60%;
+  margin: 0 auto;
 }
 
 #website .article__info > div {
@@ -463,7 +478,7 @@
 }
 
 .btn-blue {
-  border: 4px solid var(--color-primary);
+  border: 3px solid var(--color-primary);
   color: var(--color-primary);
 }
 
@@ -472,7 +487,7 @@
 }
 
 .btn-green {
-  border: 4px solid var(--color-green);
+  border: 3px solid var(--color-green);
   color: var(--color-green);
 }
 
@@ -480,7 +495,7 @@
   color: var(--color-green);
 }
 .btn-salmon {
-  border: 4px solid var(--color-salmon);
+  border: 3px solid var(--color-salmon);
   color: var(--color-salmon);
 }
 
@@ -488,10 +503,19 @@
   color: var(--color-salmon);
 }
 
+.btn-primary {
+  border: 3px solid var(--color-primary-dark);
+  color: var(--color-primary-dark);
+}
+
+.text-primary {
+  color: var(--color-primary-dark);
+}
+
 .btn-white {
   transform: translateY(100%);
   width: 25%;
-  border: 4px solid #fff;
+  border: 3px solid #fff;
   color: #fff;
 }
 
@@ -501,6 +525,10 @@
 
 .btn-green:hover {
   background-color: var(--color-green);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
 }
 
 .btn-white:hover {
@@ -808,7 +836,7 @@
 
 #advertisement .banner2 .img-box4 {
   position: absolute;
-  top: 41rem;
+  bottom: 8rem;
   left: 50%;
   transform: translateX(-50%);
   width: 70%;
@@ -1173,7 +1201,8 @@
     color: var(--color-primary);
     flex: 1;
     z-index: 1;
-    transform: translateX(9rem);
+    transform: translateX(2rem) translateY(13rem);
+
     text-align: right;
     display: flex;
     flex-direction: column;

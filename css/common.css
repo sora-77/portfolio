@@ -351,10 +351,14 @@ button {
   background-color: var(--color-primary);
   width: 100%;
   height: 70rem;
-  padding-top: 15rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding: 10rem 15rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#footer .footer__logo {
 }
 
 #footer .footer__logo a {
@@ -376,19 +380,36 @@ button {
   transform: translateX(-1.5rem);
 }
 
+#footer .footer__bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: var(--main-en-font);
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
 #footer .menu__list {
-  position: absolute;
-  bottom: 4rem;
   display: flex;
 }
 
 #footer .menu__list .menu__item {
   margin-right: 1.8rem;
+  border-bottom: 2px solid transparent;
 }
 
-#footer .menu__list .menu__item a {
+#footer .menu__list .menu__item:hover {
+  border-bottom: 2px solid #fff;
+}
+#footer .menu__list .menu__item a,
+#footer .contact a {
   color: #fff;
-  font-family: var(--main-en-font);
-  font-size: 2.4rem;
-  font-weight: 300;
+}
+
+#footer .contact > div {
+  line-height: 2em;
+}
+
+#footer .contact > div:hover a {
+  border-bottom: 2px solid #fff;
 }

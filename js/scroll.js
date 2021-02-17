@@ -41,7 +41,7 @@ $(function(){
       
       $(window).scroll(function() {
 
-        if ($(document).scrollTop() > $("#about .about__sora2").offset().top - 280) {
+        if ($(document).scrollTop() > $("#about .about__sora2").offset().top - 300) {
             $(".about__intro").hide();
           } else {
             $(".about__intro").show();
